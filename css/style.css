@@ -60,7 +60,7 @@ section {
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.4rem 2.5rem;
+  padding: 0.7rem 3rem;
   background: #222;
   color: #fff;
   font-size: 1.7rem;
@@ -120,23 +120,55 @@ header .nav-bar a:hover {
 
 /* section home start */
 
-.second-home {
+/* .second-home {
   display: none;
+} */
+
+.second-home {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#home {
+.second-home img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1rem solid var(--min-color);
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+  -webkit-user-drag: none;
+}
+
+.second-home h3 span,
+.second-home h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--black);
+  line-height: 6rem;
+}
+
+.second-home p {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* #home {
   padding: 0;
   margin: 0;
   position: relative;
-  background: url(../images/banner.jpg) no-repeat;
+   background: url(../images/banner.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
 .arrow {
   position: absolute;
   bottom: 4rem;
-  left: 50%;
+  left: 48%;
   transform: translateX(-50%);
   font-size: 3rem;
   color: var(--min-color);
@@ -218,6 +250,7 @@ header .nav-bar a:hover {
   color: var(--black);
   margin: 1rem 0;
 }
+
 .details .box p span {
   color: var(--min-color);
 }
@@ -452,24 +485,24 @@ header .nav-bar a:hover {
     font-size: 3rem;
   }
 
-  #home {
+  /* #home {
     background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  #home > .content {
+  /* #home > .content {
     display: none;
-  }
+  } */
 
-  .second-home {
+  /* .second-home {
     height: 100%;
     display: block;
     text-align: center;
-  }
+  } */
 
-  .second-home img {
+  /* .second-home img {
     width: 30rem;
     height: 30rem;
     object-fit: cover;
@@ -477,20 +510,23 @@ header .nav-bar a:hover {
     border: 1rem solid var(--min-color);
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
     -webkit-user-drag: none;
+  } */
+  .arrow {
+    left: 50%;
   }
 
-  .second-home h3 {
+  /* .second-home h3 {
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--black);
     line-height: 5rem;
-  }
+  } */
 
-  .second-home p {
+  /* .second-home p {
     font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 500;
-  }
+  } */
 
   .heading {
     padding-bottom: 2rem;
@@ -508,7 +544,7 @@ header .nav-bar a:hover {
     position: fixed;
     display: block;
     right: -5rem;
-    bottom: 4rem;
+    bottom: 3rem;
     width: 4rem;
     height: 4rem;
     background: var(--min-color);
@@ -520,7 +556,7 @@ header .nav-bar a:hover {
   }
 
   .scrollUp.active {
-    right: 5rem;
+    right: 2rem;
   }
 
   .scrollUp:hover {

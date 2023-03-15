@@ -8,6 +8,23 @@ menu_btn.addEventListener("click", () => {
 
 let spans = document.querySelectorAll(".progress span");
 
+let numbers = document.querySelectorAll(".skill p span");
+let skills = document.querySelector(".skills");
+
+function getCount(el) {
+  let goal = el.dataset.count;
+  let c = 1;
+  let count = setInterval(() => {
+    c++;
+    el.innerHTML = `${c}%`;
+    if (c == goal) {
+      clearInterval(count);
+    }
+  }, 10 / goal);
+}
+
+let started = false;
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 600) {
     scrollUp.classList.add("active");
@@ -15,13 +32,23 @@ window.addEventListener("scroll", () => {
     scrollUp.classList.remove("active");
   }
 
-  if (window.scrollY > 2060) {
-    spans.forEach((e) => {
-      e.style.width = e.dataset["width"];
-    });
+  if (window.scrollY >= skills.offsetTop - 200) {
+    if (!started) {
+      spans.forEach((e) => {
+        e.style.width = e.dataset["width"];
+      });
+      numbers.forEach((num) => {
+        getCount(num);
+      });
+    }
+    started = true;
   } else {
+    started = false;
     spans.forEach((e) => {
       e.style.width = 0;
+    });
+    numbers.forEach((num) => {
+      num.innerHTML = 0;
     });
   }
 
