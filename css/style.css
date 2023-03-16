@@ -120,10 +120,6 @@ header .nav-bar a:hover {
 
 /* section home start */
 
-/* .second-home {
-  display: none;
-} */
-
 .second-home {
   height: 90vh;
   display: flex;
@@ -156,14 +152,6 @@ header .nav-bar a:hover {
   font-weight: 500;
 }
 
-/* #home {
-  padding: 0;
-  margin: 0;
-  position: relative;
-   background: url(../images/banner.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
 
 .arrow {
   position: absolute;
@@ -485,52 +473,14 @@ header .nav-bar a:hover {
     font-size: 3rem;
   }
 
-  /* #home {
-    background: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
-  /* #home > .content {
-    display: none;
-  } */
-
-  /* .second-home {
-    height: 100%;
-    display: block;
-    text-align: center;
-  } */
-
-  /* .second-home img {
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 1rem solid var(--min-color);
-    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
-    -webkit-user-drag: none;
-  } */
   .arrow {
     left: 50%;
   }
 
-  /* .second-home h3 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: var(--black);
-    line-height: 5rem;
-  } */
-
-  /* .second-home p {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    font-weight: 500;
-  } */
-
   .heading {
     padding-bottom: 2rem;
   }
+  
   #about .container {
     flex-wrap: wrap;
   }
