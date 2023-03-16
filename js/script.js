@@ -104,3 +104,9 @@ a.forEach((e) => {
     header.classList.remove("active");
   });
 });
+
+
+// 
+
+
+AOS.init();

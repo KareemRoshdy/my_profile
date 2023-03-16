@@ -152,11 +152,10 @@ header .nav-bar a:hover {
   font-weight: 500;
 }
 
-
 .arrow {
   position: absolute;
-  bottom: 4rem;
-  left: 48%;
+  bottom: 2rem;
+  left: 49%;
   transform: translateX(-50%);
   font-size: 3rem;
   color: var(--min-color);
@@ -283,6 +282,12 @@ header .nav-bar a:hover {
 .services .container .box p {
   font-size: 1.7rem;
   color: var(--black);
+}
+.services .container .box p {
+  height: 90px;
+}
+.blogs .container .box p {
+  height: 140px;
 }
 /* section services end */
 
@@ -480,7 +485,7 @@ header .nav-bar a:hover {
   .heading {
     padding-bottom: 2rem;
   }
-  
+
   #about .container {
     flex-wrap: wrap;
   }

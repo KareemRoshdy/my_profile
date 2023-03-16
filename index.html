@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>My Cv</title>
@@ -28,11 +31,11 @@
     <!-- Section Home Start -->
     <section class="home" id="home">
       <!-- Home Style In Small Screen -->
-      <div class="second-home">
+      <div class="second-home" data-aos="fade-down">
         <div class="wraper">
           <img class="tilt" src="images/pic1.jpg" />
           <h3>kareem <span>roshdy</span></h3>
-          <p>i am <span class="typing-text"> front end developer </span></p>
+          <p>i am a<span class="typing-text"> front end developer | reactJS</span></p>
           <a href="#about" class="btn">about me</a>
           <a href="#about" class="arrow"
             ><i class="fas fa-angle-double-down"></i
@@ -44,19 +47,36 @@
 
     <!-- Section About Start -->
     <section class="about" id="about">
-      <h1 class="heading">about <span>me</span></h1>
+      <h1
+        class="heading"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="500"
+      >
+        about <span>me</span>
+      </h1>
 
       <div class="container">
-        <div class="img">
+        <div
+          class="img"
+          data-aos="fade-up-right"
+          data-aos-offset="450"
+          data-aos-duration="500"
+        >
           <img src="images/bg3.jpg" alt="my-pic" />
         </div>
-        <div class="content">
+        <div
+          class="content"
+          data-aos="fade-up-left"
+          data-aos-offset="450"
+          data-aos-duration="500"
+        >
           <div class="my-info">
             <h1>
               My Name Is
               <span>Kareem Roshdy</span>
             </h1>
-            <p>I'm Front End Web Developer</p>
+            <p>I'm a Front End Web Developer | reactJS</p>
             <p>
               An ambitious front-end web developer with a strong foundation in
               JavaScript, HTML, CSS and React JS. Eager to learn from
@@ -93,10 +113,15 @@
     <!-- Section Services Start -->
 
     <section class="services" id="services">
-      <h1 class="heading"><span>my</span> services</h1>
+      <h1 class="heading" data-aos="zoom-in"><span>my</span> services</h1>
 
       <div class="container">
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-right"
+          data-aos-offset="350"
+          data-aos-duration="500"
+        >
           <i class="fas fa-code icon"></i>
           <h3>web development</h3>
           <p>
@@ -105,7 +130,12 @@
           </p>
         </div>
 
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-offset="350"
+          data-aos-duration="500"
+        >
           <i class="fas fa-mobile icon"></i>
           <h3>Responsive Designs</h3>
           <p>
@@ -114,7 +144,12 @@
           </p>
         </div>
 
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-left"
+          data-aos-offset="350"
+          data-aos-duration="500"
+        >
           <i class="fab fa-react icon"></i>
           <h3>react js</h3>
           <p>
@@ -129,10 +164,16 @@
 
     <!-- Section Skills End -->
     <section class="skills" id="skills">
-      <h1 class="heading"><span>my</span> skills</h1>
+      <h1 class="heading" data-aos="zoom-in"><span>my</span> skills</h1>
 
       <div class="container">
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <h3>My creative skills & experiences.</h3>
           <p>
             A disciplined web developer with over 10 years of experience working
@@ -140,7 +181,14 @@
           </p>
           <a href="#" class="btn">read more</a>
         </div>
-        <div class="box two">
+
+        <div
+          class="box two"
+          data-aos="fade-down"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <div class="skill">
             <p>HTML5 <span data-count="90">0%</span></p>
             <div class="progress">
@@ -172,94 +220,155 @@
 
     <!-- Section Blogs start -->
     <section id="blogs" class="blogs">
-      <h1 class="heading"><span>my</span> blogs</h1>
+      <h1 class="heading" data-aos="zoom-in"><span>my</span> blogs</h1>
 
       <div class="container">
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="500"
+        >
           <img src="images/blog1.png" alt="blog" />
           <h3>e-commerce app</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            create e-commerce app using HTML, CSS, and JavaScript. The
+            application contains a login page and an account creation page in
+            addition to the home page
           </p>
           <a href="https://kareemroshdy.github.io/shoppinApp/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="500"
+        >
           <img src="images/blog2.png" alt="blog" />
           <h3>dtu university</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            My university project for student affairs. The application contains
+            a login page for employees and a special page for students
+            <br />E-mail: kareem, Password: 123
           </p>
           <a href="https://kareemroshdy.github.io/dtu_site/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-duration="500"
+        >
           <img src="images/blog3.png" alt="blog" />
           <h3>XO game</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            The X and O game is a good experience for applying on JavaScript.
+            The winner is shown either Oh or X, and in the event of a tie, the
+            game is reloaded again
           </p>
           <a href="https://kareemroshdy.github.io/XO_game/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog4.png" alt="blog" />
-          <h3>CRADS</h3>
+          <h3>CRUDS</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            Create a simple crud system to manage products using (html, css, and
+            javascript). Products are added and deleted, in addition to the
+            ability to modify and search for any product.
           </p>
           <a href="https://kareemroshdy.github.io/CRUDS/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog5.png" alt="blog" />
           <h3>QAF e-commerce</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            create e-commerce app using HTML, CSS, and JavaScript. The
+            application contains a login page and an account creation page in
+            addition to the home page
           </p>
           <a href="https://kareemroshdy.github.io/qaf_app/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-left"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog6.png" alt="blog" />
           <h3>paradise website</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            Create a website for a restaurant. The aim of this training is to
+            apply the CSS properties and apply responsiveness on all screens
           </p>
           <a href="https://kareemroshdy.github.io/Paradise_Website/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-right"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog7.png" alt="blog" />
           <h3>log in animation page</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            Make an animation from the application on css animation using
+            javascript with the animation
           </p>
           <a href="https://kareemroshdy.github.io/animat_form/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog8.png" alt="blog" />
           <h3>simply natural</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            create web app using HTML, CSS, and JavaScript. The application
+            contains a login page and an account creation page in addition to
+            the home page
           </p>
           <a href="https://kareemroshdy.github.io/plants_website/" class="btn"
             >show website</a
           >
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="fade-left"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
           <img src="images/blog9.png" alt="blog" />
           <h3>kit website</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            create web app using HTML, CSS, and JavaScript. The application
+            contains a login page and an account creation page in addition to
+            the home page
           </p>
           <a href="https://kareemroshdy.github.io/ket_website/" class="btn"
             >show website</a
@@ -271,13 +380,23 @@
 
     <!-- Section Contact Start -->
     <section class="contact" id="contact">
-      <h1 class="heading">contact <span>me</span></h1>
+      <h1 class="heading" data-aos="zoom-in">contact <span>me</span></h1>
 
       <div class="container">
-        <div class="box">
+        <div
+          class="box"
+          data-aos="zoom-in-right"
+          data-aos-offset="350"
+          data-aos-duration="500"
+        >
           <img src="images/contact-img.svg" alt="contact" />
         </div>
-        <div class="box">
+        <div
+          class="box"
+          data-aos="zoom-in-left"
+          data-aos-offset="350"
+          data-aos-duration="500"
+        >
           <form action="">
             <div class="input-box">
               <input type="text" placeholder="name" />
